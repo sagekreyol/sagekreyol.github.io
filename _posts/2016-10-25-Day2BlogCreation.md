@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Sagekreyol Launches Site"
 date: 2016-10-25
 ---
