@@ -8,12 +8,12 @@ It's my third day of this project, and I'm not sure if I can keep this up.  I'm 
 
 Initially, I wanted to use an unordered list, but for some reaons my code wasn't behaving.  I initially tried to use 
 
-&lt;li ul {&gt;</br>
-    &lt;   display: none;&gt;</br> 
-&lt;}&gt;</br>
-&lt;li : hover>ul {&gt;</br>
-    &lt;display: block;&gt;</br>
-&lt;} &gt;</br>
+&lt;li ul {&gt;<br/>
+    &lt;   display: none;&gt;<br/> 
+&lt;}&gt;<br/>
+&lt;li : hover>ul {&gt;<br/>
+    &lt;display: block;&gt;<br/>
+&lt;} &gt;<br/>
 
 But it wouldn't come out right at all, so I used a different approach.
 
