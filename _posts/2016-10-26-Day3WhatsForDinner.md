@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What's For Dinner"
-date: 2016-10-25
+date: 2016-10-26
 ---
 
 It's my third day of this project, and I'm not sure if I can keep this up.  I'm learning as I go along.  Spending a few hours reading about HTML and CSS at this point and then trying to make a page by trial and error.  I specifically have not used any Javascript at this point as I want to make sure I understand all the functionality of HTML (including HTML5) and CSS3 before getting into more dynamic stuff.
