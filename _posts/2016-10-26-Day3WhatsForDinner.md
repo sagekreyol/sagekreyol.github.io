@@ -11,11 +11,11 @@ Initially, I wanted to use an unordered list, but for some reaons my code wasn't
    <pre>
        <code>
 li ul {<br/>
-    &lt;   display: none;&gt;<br/> 
-&lt;}&gt;<br/>
-&lt;li : hover>ul {&gt;<br/>
-    &lt;display: block;&gt;<br/>
-&lt;} &gt;<br/>
+       display: none;<br/> 
+}<br/>
+li : hover>ul {<br/>
+    display: block;<br/>
+} <br/>
     </code>
     </pre>
 </blockquote>
