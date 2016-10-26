@@ -2,24 +2,24 @@
 <html>
 <head>
  
-  <title>{{ page.title }}</title>
+  <title> What's for Dinner? </title>
  <!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<meta name="description" content="Sagekreyol first attempt at a website">
+ <link rel="stylesheet" type="text/css" href="/css/main.css">
+ <meta name="description" content="Sagekreyol first attempt at a website">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
-li,ul {
-    display: none;
-  }
-  
-  li : hover > ul {
-    display: block;
-    
-  }
+
   p {
     color:blue
-  }
+}
+div { 
+ display: none;
+}
+   
+a:hover + div {
+ display: block;
+}
 </style>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,58 +33,39 @@ li,ul {
 
 <body>
 <nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<!-- <li><a href="/about">About</a></li> -->
-        		<!-- <li><a href="/cv">CV</a></li> -->
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
+      <ul>
+          <li><a href="/">Home</a></li>
+          <!-- <li><a href="/about">About</a></li> -->
+          <!-- <li><a href="/cv">CV</a></li> -->
+          <li><a href="/blog">Blog</a></li>
+      </ul>
+  </nav>
 
 
 <body>
 <h1>What's for dinner</h1>
-  <p>This is a simple way of playing hide and seek of what's on the weekly menu</p>
-<ul>
-  <li>Monday</li>
-<ul>
-  <li>Chicken</li>
-  <li>Spinach</li>
-  <li>Rice</li>
-</ul>
-  </ul>
-  <ul>
-  <li>Tuesday</li>
- <ul>
-  <li>Tofu</li>
-  <li>Kale</li>
-  <li>Bread</li>
-</ul>
-  </ul>
-    <ul>
-  <li>Wednesday</li>
- <ul>
-  <li>Tofu</li>
-  <li>Kale</li>
-  <li>Bread</li>
-</ul>
-  </ul>
-<ul>
-  <li>Thursday</li>
- <ul>
-  <li>Tofu</li>
-  <li>Kale</li>
-  <li>Bread</li>
-</ul>
-  </ul>
-<ul>
-  <li>Friday</li>
- <ul>
-  <li>Tofu</li>
-  <li>Kale</li>
-  <li>Bread</li>
-</ul>
-  </ul>
+  <p>This is a simple way of playing hide and seek of what's on the weekly menu.  Hover over the day of the week to see what's cooking!</p>
+<a>Monday</a>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;Sesame Chicken, Broccoli and White Rice</div>
+<p> </p>
+
+<a>Tuesday</a>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;Tofu, Kale and Pasta</div>
+<p> </p>
+
+<a>Wednesday</a>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;Fried Tilapia, Spinach and Brown Rice</div>
+<p> </p>
+
+<a>Thursday</a>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;Beef Stroganoff, Asparagus and potatoes</div>
+<p> </p>
+
+<a>Friday</a>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;Stir Fry Pork, Carrots and rice noodles</div>
 
 </body>
 </html>
+
+
+
