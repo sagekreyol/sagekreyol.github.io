@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+input {
+display:none;
+}
+label {
+    display: block;
+    background: Crimson;
+    color:black;
+    width: 100px;
+    height: 100px;
+border-radius:12px;
+text-align:center;
+left:200;
+line-height:100px;
+transition:2s;
+position:relative;
+}
+
+
+#zero:checked + label { 
+background: Green;
+    color: white;
+  transform: translate(100px,200px);
+  -ms-transform: translate(100px,200px); /* IE 9 */
+  -webkit-transform: translate(100px,200px); /* Safari */
+    }
+
+#one:checked + label {
+    background: blue;
+    color: white;
+    transform: translate(200px,200px);
+  -ms-transform: translate(200px,200px); /* IE 9 */
+  -webkit-transform: translate(200px,200px); /* Safari */
+
+    }
+
+#two:checked + label {
+    background: DarkViolet;
+    color: white;
+    transform: translate(400px,100px);
+   -ms-transform: translate(400px,100px); /* IE 9 */
+  -webkit-transform: translate(400px,100px); /* Safari */
+   }
+
+#three:checked + label {
+    background: Aqua;
+    color: white;
+    transform: translate(500px,-300px);
+  -ms-transform: translate(500px,-300px); /* IE 9 */
+  -webkit-transform: translate(500px,-300px); /* Safari */
+   
+ }
+#end:checked + label {
+    background: orange;
+    color: white;
+    transform: translate(500px,100px);
+  -ms-transform: translate(500px,100px); /* IE 9 */
+  -webkit-transform: translate(500px,100px); /* Safari */
+
+    }
+
+</style>
+</head>
+<body>
+<div>
+<input type="checkbox" id="zero"/>
+<label for="zero">Click Me</label>
+</div>
+<div>
+<input type="checkbox" id="one"/>
+<label for="one">Click Me</label>
+</div>
+<input type="checkbox" id="two"/>
+<label for="two">Click Me</label>
+
+<input type="checkbox" id="three"/>
+<label for="three">Click Me</label>
+
+<input type="checkbox" id="end"/>
+<label for="end">Click Me</label-->
+
+</body>
+</html>
