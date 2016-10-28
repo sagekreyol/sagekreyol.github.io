@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8"/>
+     
+     <script type="text/javascript">
+     var looper;
+     var degrees = 0;
+     function rotateAnimation(el,speed){
+        var elem = document.getElementById(el);
+        if(navigator.userAgent.match("Chrome")){
+            elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+        }   else {
+                elem.style.transform = "rotate("+degrees+"deg)";
+        }
+        looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed); degrees++;
+        if(degrees > 359){
+           degrees = 1;
+        }
+        //document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+        }
+      </script>  
+</head>
+<body>
+     <img id="Tour" src="c:\users\vostro\Pictures\TourEiffel.jpg" style="width:200px;height:200px;">
+     <script>
+        function spinme() {
+        rotateAnimation("Tour",-1);
+		}
+        function stop()  {
+        return false;
+    }
+     </script>
+  <button onclick="spinme(); return false;">Make me spin</button>
+<button onclick="stop()">Stop the spin</button>
+</body>
+</html>
