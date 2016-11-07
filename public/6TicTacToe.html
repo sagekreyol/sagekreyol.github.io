@@ -23,6 +23,8 @@
      /* whose turn is it*/
      function startGame()  {
             document.turn = "X";
+            /*decide who wins */
+            document.winner = null;
 
             setMessage(document.turn + " gets to start.");
      }
@@ -32,8 +34,10 @@
      }
     /*allows two players*/
      function nextMove(square)  {
-     
-         if (square.innerText == "") {
+        /*Checks is the cell is empty, if the game was won and who the winner was*/
+         if (document.winner != null {
+             setMessage(document.winner + " already won the game.");
+         }  else if (square.innerText == "") {
               square.innerText = document.turn;
               switchTurn();
         /*prevents changing square indefinitely*/
@@ -44,15 +48,15 @@
 /*alllows players to alternate as well as messae for whose turn it is */
      function switchTurn() {
            
-           if (checkForWinner(document.turn)){
-               setMessage("Congratulations, " + document.turn + "! You win!");
-           } else if (document.turn =="X") {
-               document.turn = "O";
+           if (checkForWinner(document.turn)) {
+                 setMessage("Congratulations, " + document.turn + "!  You win!");
+           } else if (document.turn == "X") {
+                 document.turn = "O";
+                 setMessage("It's " + document.turn + "'s turn!");
            } else {
-               document.turn = "X";         
-           }
-
-           setMessage("It's " + document.turn + "'s turn!");
+                 document.turn = "X";
+                 setMessage("It's " + document.turn + "'s turn!");         
+           }  
      }
      
      function checkForWinner(move) {
@@ -64,9 +68,9 @@
                checkRow(2, 5, 8, move) ||
                checkRow(3, 6, 9, move) ||
                checkRow(1, 5, 9, move) ||
-               checkRow(3, 5, 7, move)) {
+               checkRow(3, 5, 7, move))  {
 
-               result - true;
+               result = true;
             }
             return result; 
 }
