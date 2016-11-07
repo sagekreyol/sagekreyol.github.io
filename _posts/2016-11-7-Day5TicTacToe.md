@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Sagekreyol Launches Site"
-date: 2016-10-25
+title: "Tic Tac Toe"
+date: 2016-11-7
 ---
 
 Ok, I've skipped a few days.  I've had to spend a lot more time reading about Javascript in order to make pages interactive.  CSS and HTML are great for static pages, but the exercise in the spinning image taught me that you need Javascript in order to really make something that a user can engage with.
