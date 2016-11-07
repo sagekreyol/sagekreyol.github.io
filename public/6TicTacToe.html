@@ -2,16 +2,42 @@
 <html>
 <head>
   <style>
-    table  {
-    border:1px solid #000000;
+    body  {
+           background-color: green
     }
+    td,tr  {
+           margin: 20px; solid black;
+           padding: 25px; 
+           border: 25px solid black;
+           font-size: 18pt;    
+    }
+
+/*This centers the table */
     .tictactoe  {
-    border:1px solid #000000;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: left;
     }
-  </style>
+     </style>
+     <script>
+     /* whose turn is it*/
+     function startGame()  {
+            document.turn = "X";
+
+            setMessage(document.turn. + " gets to start.");
+     }
+
+     function setMessage(msg)  {
+             document.getElementById("message").innerText = msg;
+     {
+
+
+
+     </script>
 </head>
-<body>
-<h1>TIC TAC TOE</h1>
+<body onload="startGame();">
+<h1 style="text-align:center;">TIC TAC TOE</h1>
+<div id="message" >Messages will go here</div>
 <table class=tictactoe>
 <tr>
 <td>1</td>
