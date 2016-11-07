@@ -30,29 +30,82 @@
      function setMessage(msg)  {
              document.getElementById("message").innerText = msg;
      }
+    /*allows two players*/
+     function nextMove(square)  {
+     
+         if (square.innerText == "") {
+              square.innerText = document.turn;
+              switchTurn();
+        /*prevents changing square indefinitely*/
+          }  else {
+                setMessage("That square is already used.");
+         }
+}    
+/*alllows players to alternate as well as messae for whose turn it is */
+     function switchTurn() {
+           
+           if (checkForWinner(document.turn)){
+               setMessage("Congratulations, " + document.turn + "! You win!");
+           } else if (document.turn =="X") {
+               document.turn = "O";
+           } else {
+               document.turn = "X";         
+           }
 
+           setMessage("It's " + document.turn + "'s turn!");
+     }
+     
+     function checkForWinner(move) {
+           var result = false;
+           if (checkRow(1, 2, 3, move) ||
+               checkRow(4, 5, 6, move) ||
+               checkRow(7, 8, 9, move) ||
+               checkRow(1, 4, 7, move) ||
+               checkRow(2, 5, 8, move) ||
+               checkRow(3, 6, 9, move) ||
+               checkRow(1, 5, 9, move) ||
+               checkRow(3, 5, 7, move) || {
+
+               result - true;
+            }
+            return result; 
+}
+
+/*how to detect if there are three in a row, across or diagonal.  Use var as long as the page is loaded*/
+     function checkRow(a, b, c, move) {
+           var result = false;
+           if (getBox(a) == move && getBox(b) == move && getBox(c) == move) {
+               result = true;
+           }
+           return result;
+     }
+     /*Retrieves a result from the screen and tells us what the value is*/
+     function getBox(number)  {
+            return document.getElementById("s" + number).innerText;
+     }
 
 
      </script>
 </head>
 <body onload="startGame();">
 <h1 style="text-align:center;">TIC TAC TOE</h1>
-<div id="message" >Messages will go here</div>
+<div id="message"> Messages will go here</div>
 <table class=tictactoe>
 <tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
+<!-- IGNORE THIS -->
+<td id="s1" class="Square" onclick=nextMove(this);></td>
+<td id="s2" class="Square" onclick=nextMove(this);></td>
+<td id="s3" class="Square" onclick=nextMove(this);></td>
 </tr>
   <tr>
-<td>4</td>
-<td>5</td>
-<td>6</td>
+<td id="s4" class="Square" onclick=nextMove(this);></td>
+<td id="s5" class="Square" onclick=nextMove(this);></td>
+<td id="s6" class="Square" onclick=nextMove(this);></td>
 </tr>
   <tr>
-<td>7</td>
-<td>8</td>
-<td>9</td>
+<td id="s7" class="Square" onclick=nextMove(this);></td>
+<td id="s8" class="Square" onclick=nextMove(this);></td>
+<td id="s9" class="Square" onclick=nextMove(this);></td>
 </tr>
 </table>
 </body>
